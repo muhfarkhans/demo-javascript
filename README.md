@@ -1,3 +1,7 @@
-# Demo Javascript
+# Demo JavaScript
 
-let's play with javascript
+Let's play with JavaScript.
+
+- Rupiah
+- Clock
+- Random Color

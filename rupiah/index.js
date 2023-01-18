@@ -1,12 +1,13 @@
-const dataMoney = [100000, 200000, 300000, 400000];
+const dataMoneyItems = [100000, 200000, 300000, 400000];
 
-for (let index = 0; index < dataMoney.length; index = index + 1) {
-  const money = dataMoney[index];
-  const newMoneyIDR = new Intl.NumberFormat("id-ID", {
+for (let index = 0; index < dataMoneyItems.length; index = index + 1) {
+  const moneyItem = dataMoneyItems[index];
+
+  const newMoneyItemIDR = new Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
     minimumFractionDigits: 0,
-  }).format(money);
+  }).format(moneyItem);
 
-  console.log(`${newMoneyIDR} format rupiah dari ${money}`);
+  console.log(`${newMoneyItemIDR} is formatted in Rupiah from ${moneyItem}`);
 }
