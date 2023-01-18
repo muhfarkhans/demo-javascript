@@ -1,6 +1,12 @@
-const randomNumber = () => Math.floor(Math.random() * 256);
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 256);
+}
+
 function changeColor() {
-  let rgbNumber = ` rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()}) `;
+  const red = generateRandomNumber();
+  const green = generateRandomNumber();
+  const blue = generateRandomNumber();
+  const rgbNumber = ` rgb(${red}, ${green}, ${blue}) `;
   document.getElementById("previewColor").style.backgroundColor = rgbNumber;
   document.getElementById("rgbNumberText").textContent = rgbNumber;
 
